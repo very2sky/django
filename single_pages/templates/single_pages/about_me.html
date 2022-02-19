@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> About 달타냥 </title>
+
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'blog/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>양정범입니다.</h1>
+                <br/>
+                <p class="lead">
+                    운동과 책 공부를 열심히 하고 있습니다.<br/>
+
+                </p>
+
+                <ul>
+                    <li>WORK EXPERIENCE</li>
+                    <ul>
+                        <li>아직 공부를 하고 있는 신입입니다.</li>
+
+                    </ul>
+                    <li>EDUCATION</li>
+                    <ul>
+                        <li>컴퓨터공학과 , 동아대학교 (2014.03~2020.08)</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'single_pages/images/me.png' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>2022 목표 </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#UnderstandDocker">
+                    <img class="card-img-top" src="{% static 'single_pages/images/UnderstandDocker.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title"> Docker 이용하기</h5>
+                        <p>Django를 이용하여 Docker활용하기</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#rest-api">
+                    <img class="card-img-top" src="{% static 'single_pages/images/rest-api.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">restful api 설계해보기</h5>
+                        <p>REST 디자인패턴을 이용하여 api 설계</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#flask">
+                    <img class="card-img-top" src="{% static 'single_pages/images/flask.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">flask 이용하여 웹만들기</h5>
+                        <p>django는 지금 해보고 있지만 Flask 해보기  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="UnderstandDocker" tabindex="-1" role="dialog" aria-labelledby="UnderstandDockerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="UnderstandDockerModalLabel">파이썬으로 통계업무 자동화하기</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/UnderstandDocker.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>도커를 한번 사용해보기 위해 파이썬 Django를 이용한 책을 찾아 공부했다</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="rest-api" tabindex="-1" role="dialog" aria-labelledby="rest-apiModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rest-apiModalLabel">restful api 설계</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/rest-api.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>Spring Framework로 해야하는가  </p>
+                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 야옹</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="flask" tabindex="-1" role="dialog" aria-labelledby="flaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="flaskModalLabel">직장인을 위한 프로그래밍 입문과 업무자동화 활용</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/flask.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 언제 한번 할꺼 공부를 해보자 그떄 이해가 좀 더 잘되게  </p>
+                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 인프런</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
