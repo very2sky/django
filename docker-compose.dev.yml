@@ -19,6 +19,6 @@ services:
     environment:
       - POSTGRES_USER=work_super_harder_db_user
       - POSTGRES_PASSWORD=work_super_harder_db_password
-      - POSTGRES_DB=work_super_harder_dev
+      - POSTGRES_DB=work_super_harder
 volumes:
   postgres_data:
