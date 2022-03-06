@@ -62,15 +62,6 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#nodejs">
-                    <img class="card-img-top" src="{% static 'single_pages/images/UnderstandDocker.png' %}">
-                    <div class="card-body">
-                        <h5 class="card-title">nodejs</h5>
-                        <p>기본적으로 자바 spring spring boot 를 다루고 nodejs를 잘 다뤄보자</p>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-lg-4">
                 <div class="card" data-toggle="modal" data-target="#flask">
@@ -81,17 +72,57 @@
                     </div>
                 </div>
             </div>
+            <!--go lang -->
+             <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#golang">
+                    <img class="card-img-top" src="{% static 'single_pages/images/golang.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Go 언어 공부하기</h5>
+                        <p>시스템 프로그래밍 공부도 해보기  </p>
+                    </div>
+                </div>
+            </div>
+            <!--spring -->
+          <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#spring">
+                    <img class="card-img-top" src="{% static 'single_pages/images/spring.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">spring 이용하여 웹만들기</h5>
+                        <p>아직까진 JAVA 는 기본 그럼백엔드는 spring/springboot는 어느정도 할줄알아야한다!!  </p>
+                    </div>
+                </div>
+            </div>
+            <!--msa -->
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#msa">
+                    <img class="card-img-top" src="{% static 'single_pages/images/msa.png' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">MSA 공부해보기</h5>
+                        <p>최근 kakao tech 를 보다가 본 MSA 한번 ...  </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#kubernetes">
+                    <img class="card-img-top" src="{% static 'single_pages/images/kubernetes.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">쿠버네티스 사용</h5>
+                        <p>도커를 해봤으니까 다수의 컨테이너를 사용할수있는 쿠버네티스도 공부 할것이다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
-    </div>
 </section>
-
 <!-- Modal -->
 <div class="modal fade" id="UnderstandDocker" tabindex="-1" role="dialog" aria-labelledby="UnderstandDockerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="UnderstandDockerModalLabel"></h5>
+                <h5 class="modal-title" id="UnderstandDockerModalLabel">첫번째</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -114,38 +145,14 @@
     </div>
 </div>
 
-<div class="modal fade" id="nodejs" tabindex="-1" role="dialog" aria-labelledby="nodejsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="nodejsModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <img class="img-fluid" src="{% static 'single_pages/images/nodejs.png' %}">
-                    </div>
-                    <div class="col-lg-5">
-                        <p>spring과 spring boot nodejs JPA 등 시작</p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 <div class="modal fade" id="flask" tabindex="-1" role="dialog" aria-labelledby="flaskModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="flaskModalLabel"> Flask 도 해봐야하지만 일단 java springboot 부터</h5>
+                <h5 class="modal-title" id="flaskModalLabel">두번째</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -167,7 +174,110 @@
     </div>
 </div>
 
+<div class="modal fade" id="kubernetes" tabindex="-1" role="dialog" aria-labelledby="kubernetesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kubernetesModalLabel"> 3번째</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/kubernetes.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 당장은 이걸 배울 건 힘들겠지만 직장에서 이걸 쓴다면 상당히 웃으면서 할수있겠지..?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--go -->
+<div class="modal fade" id="golang" tabindex="-1" role="dialog" aria-labelledby="golangModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="golangModalLabel"> 3번째</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/golang.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 리눅스는 기본이고 go 도 아는 느낌으로..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--msa -->
+<div class="modal fade" id="msa" tabindex="-1" role="dialog" aria-labelledby="msaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="msaModalLabel"> 4번째</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/msa.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 현재까지 내가 아는 이론은 서로의 의존성을 최대한 없애서 각기능들 유동적으로 쓰이는 것 이것을 어떻게 하는가 에 대해서는 이해할려고 노력중</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--spring -->
+<div class="modal fade" id="spring" tabindex="-1" role="dialog" aria-labelledby="springModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="springModalLabel"> 3번째</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/spring.png' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> JAVA는 기본이고 백엔드 가면 spring/springboot는 기본이다..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="fixed-bottom">
     {% include 'blog/footer.html' %}
