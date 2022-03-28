@@ -14,7 +14,7 @@
   <tbody>
   {% for board in board_list %}
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">{{ board.pk }}</th>
       <td><a href="{{ board.get_absolute_url }}">{{ board.title }}</a></td>
       <td>{{board.author}}</td>
       <td>{{board.created_at}}</td>
